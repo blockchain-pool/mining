@@ -1,0 +1,636 @@
+html, body {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #000a2b;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+header {
+    text-align: center;
+}
+header span.paid {
+    color: #FDC62D;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+header span.totalBTCpaid,
+header span.totalETHpaid {
+	color: #FDC62D;
+    font-weight: bold;
+    font-size: 28px;
+}
+header img.logo {
+    display: inline-block;
+}
+header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+section.main .holder {
+    /*background: #EBEBEB;*/
+    border-radius: 5px;
+}
+section.main .holder .tab-content {
+    background: #EBEBEB;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+section.main img.nav-logo {
+    width: 85px;
+}
+.nav-tabs>li>a {
+    height: 50px;
+}
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    background-color: #EBEBEB;
+    border: none;
+}
+.nav-tabs {
+    text-align: center;
+    border-bottom: none;
+}
+.nav-tabs>li {
+    float: none;
+    display: inline-block;
+}
+.nav-tabs>li>a:hover {
+    border: solid 1px transparent;
+}
+.holder .content {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.holder .content h3 {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    color: #606060;
+}
+.holder .content h4 {
+    text-align: center;
+    color: #606060;
+    margin-bottom: 20px;
+}
+.holder .content .addressInput {
+    width: 100%;
+    border: solid 1px #ccc;
+    height: 45px;
+    border-radius: 5px;
+    background: #F7F7F7;
+    box-shadow: none;
+    outline: none;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    font-size: 17px;
+}
+.holder .content .generateButton {
+    background: #0574d0;
+    border: solid 1px #0574d0;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    background: #1372D0;
+    border: solid 1px #1372D0;
+    border-radius: 30px;
+}
+span#amount-bitcoin,
+span#amount-ethereum {
+    float: right;
+    color: #edad00;
+    margin-top: -14px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.ui-widget.ui-widget-content {
+    height: 15px;
+    border-radius: 30px;
+    border: none;
+    width: 72%;
+    display: inline-block;
+}
+.ui-slider .ui-slider-handle {
+    top: -9px;
+    margin-left: -.6em;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: none;
+    background: url(../images/coin.png) center center #1372D0 no-repeat;
+    border: none;
+}
+.console-background {
+    background: #111111;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: -20px;
+    margin-right: -20px;
+    color: #fff;
+}
+.console {
+    background: #060606;
+    border-radius: 10px;
+    min-height: 200px;
+    padding: 15px;
+    color: #fff;
+}
+.console-info {
+    margin-top: 15px;
+}
+.console-info .fa {
+    color: #3BD002;
+}
+.transactions {
+    background: #EBEBEB;
+    padding: 20px;
+}
+.transactions .transaction {
+    background: #0574d0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.transactions .transaction span.pull-left a {
+    color: #fff;
+    font-weight: bold;
+}
+.transactions .transaction span.pull-left a:hover {
+    text-decoration: none;
+}
+.transactions .transaction:last-child {
+    margin-bottom: 0;
+}
+.features .img-holder {
+    height: 105px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.features .img-holder img {
+    display: block;
+    max-height: 100%;
+    margin: 0 auto;
+}
+.comments-area {
+    background: #fff;
+    margin-top: 40px;
+    padding: 10px;
+}
+.comments-area h3 {
+    padding-bottom: 5px;
+    border-bottom: solid 2px #CECECE;
+}
+.comments-area h4 {
+    font-size: 15px;
+    padding-top: 10px;
+    border-bottom: solid 1px #CECECE;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+.comments-area .leave-comment {
+    background: #F2F2F2;
+    border-top: solid 1px #CECECE;
+    border-bottom: solid 1px #CECECE;
+    padding: 10px;
+    margin-top: 10px;
+}
+.comments-area .comment-icon {
+    width: 60px;
+    float: left;
+    margin-right: 15px;
+}
+.comments-area .comment-field {
+    width: calc(100% - 80px);
+    display: inline-block;
+}
+.comments-area .comment-field textarea {
+    width: 100% !important;
+    border: solid 1px #CECECE;
+    background: #fff;
+    box-shadow: none;
+    outline: none;
+    height: 50px;
+    max-height: 50px;
+    padding: 5px;
+}
+.comments-area .leave-comment .postButton {
+    background: #5C77A6;
+    color: #fff;
+    border: solid 1px #244477;
+    box-shadow: none;
+    outline: none;
+    padding: 5px 15px;
+    font-weight: bold;
+    float: right;
+    margin-top: 5px;
+}
+.comments-area .leave-comment .userPostName {
+    height: 33px;
+    margin-top: 5px;
+    box-shadow: none;
+    outline: none;
+    padding-left: 5px;
+}
+.comments-area .comment {
+    overflow: auto;
+    border-bottom: solid 1px #CECECE;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+.comment .comment-user {
+    color: #56679D;
+    display: block;
+    font-weight: bold;
+}
+.comment .comment-content {
+    display: block;
+}
+.comment .comment-time {
+    color: #928686;
+    display: block;
+    font-weight: 500;
+}
+.footer {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #5F5F5F;
+}
+.footer .divider {
+    display: inline-block;
+    width: 300px;
+    height: 1px;
+    background: #CECECE;
+    margin-bottom: 10px;
+}
+.err {
+    border: solid 1px red !important;
+}
+.terminal {
+    white-space: pre;
+    height: 200px;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: #ffffff;
+    letter-spacing: .2px;
+}
+.progress-bg {
+    padding: 3px 8px 5px 8px;
+    background: #232323;
+    border-radius: 40px;
+    margin-top: 5px;
+    margin-left: -20px;
+    margin-right: -20px;
+    display: none;
+}
+.progress {
+    height: 14px;
+    width: 1%;
+    z-index: 99;
+    overflow: hidden;
+    background: #5CB85C;
+    transition: width .3s;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 8px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    vertical-align: middle;
+    display: inline-block;
+    padding-top: 2px;
+    border-radius: 40px;
+}
+.startModal .modal-body .item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.modal-body .item span.pull-left {
+    font-weight: 500;
+    font-size: 16px;
+}
+.startModal .modal-footer {
+    text-align: center;
+}
+.startModal .modal-footer .btn {
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: none;
+    outline: none;
+    font-size: 16px;
+}
+.greenAmount {
+    background-color: rgb(91,183,91);
+    background-image: -moz-linear-gradient(50% 0%,rgb(98,196,98),rgb(81,163,81));
+    background-repeat: repeat-x;
+    border-bottom-color: rgba(0,0,0,0.25);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: rgba(0,0,0,0.1);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgba(0,0,0,0.1);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgba(0,0,0,0.1);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-shadow: rgba(255,255,255,0.2) 0px 1px 0px 0px inset, rgba(0,0,0,0.05) 0px 1px 2px 0px;
+    color: rgb(255,255,255);
+    display: inline-block;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    text-align: center;
+    text-shadow: rgba(0,0,0,0.25) 0px -1px 0px;
+    vertical-align: middle;
+}
+.blueConfirmation {
+    background-color: rgb(0,116,204);
+    background-image: -moz-linear-gradient(50% 0%,rgb(0,136,204),rgb(0,85,204));
+    background-repeat: repeat-x;
+    border-bottom-color: rgba(0,0,0,0.25);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: rgba(0,0,0,0.1);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgba(0,0,0,0.1);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgba(0,0,0,0.1);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-shadow: rgba(255,255,255,0.2) 0px 1px 0px 0px inset, rgba(0,0,0,0.05) 0px 1px 2px 0px;
+    color: rgb(255,255,255);
+    display: inline-block;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    text-align: center;
+    text-shadow: rgba(0,0,0,0.25) 0px -1px 0px;
+    vertical-align: middle;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+}
+.change-avatar {
+    height: 60px;
+    width: 61px;
+    position: absolute;
+    left: 34px;
+    display: inline-block;
+    transition: all ease 0.5s;
+    opacity: 0;
+    text-align: center;
+    line-height: 67px;
+}
+.change-avatar:hover {
+    background: rgba(255, 255, 255, 0.5);
+    opacity:1;
+    cursor: pointer;
+}
+.change-avatar .fa {
+    font-size: 25px;
+    color: #cccccc;
+}
+.modal {
+    padding: 0 !important;
+    background: rgba(0, 0, 0, 0.2);
+    color: #5F5F5F;
+    font-weight: 300;
+}
+.modal-content {
+    box-shadow: none !important;
+    /*background: transparent;*/
+    border: none;
+    border-radius: 0;
+}
+.modal-dialog {
+    margin: 130px auto;
+}
+.modal.in .modal-dialog,
+.modal.fade .modal-dialog {
+    transition: none !important;
+    transform: none !important;
+}
+.modal-footer {
+    border: none;
+}
+.modal-header h2 {
+    font-weight: 300;
+    font-size: 22px;
+}
+.modal .target-amount {
+    background: #F5F7F9;
+    padding: 15px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.modal .target-amount .small-text {
+    color: #F26C57;
+    display: block;
+    font-size: 16px;
+}
+.modal .target-amount .target-value {
+    font-size: 28px;
+    font-weight: 600;
+    color: #F26C57;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.modal .target-amount .btc-price,
+.modal .target-amount .eth-price {
+    color: #F26C57;
+    font-size: 19px;
+    font-weight: 300;
+    display: block;
+}
+.modal .modal-footer .confirmBTC,
+.modal .modal-footer .confirmETH {
+    display: block;
+    width: 100%;
+    background: #10ADE4;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.modal .modal-footer .confirmBTC:hover,
+.modal .modal-footer .confirmETH:hover {
+    background: #0d8fbf;
+}
+.modal-header,
+.modal-body,
+.modal-footer {
+    padding: 20px;
+}
+.modal input.form-control {
+    height: 40px;
+    border-radius: 0;
+    box-shadow: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+#qrcodeBTC img,
+#qrcodeETH img {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#finalModalBTC .modal-dialog,
+#finalModalETH .modal-dialog {
+    margin: 35px auto;
+}
+#ouibounce-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    font-family: 'Ubuntu-Bold', sans-serif;
+}
+
+.modal-holder {
+    width: 615px;
+    margin: 0 auto;
+    top: 100px !important;
+    position: relative;
+}
+
+.ouibounce-header {
+    /*background: #0D5257;*/
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 19px;
+    border-radius: 30px 30px 0 0;
+}
+
+#ouibounce-modal .underlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    cursor: pointer;
+    -webkit-animation: fadein 0.5s;
+    animation: fadein 0.5s;
+}
+
+#ouibounce-modal .ouibounce-content {
+    text-align: left;
+    /*background: #F0F1F2;*/
+    /*padding: 35px 115px 35px 35px;*/
+    color: #fff;
+}
+
+#ouibounce-modal .ouibounce-content img.ethereum{
+    width: 70px;
+}
+#ouibounce-modal .ouibounce-content img.bitcoin{
+    width: 93px;
+}
+
+#ouibounce-modal .ouibounce-content h2,
+#ouibounce-modal .ouibounce-content h3 {
+    line-height: 28px;
+}
+
+#ouibounce-modal .ouibounce-footer {
+    text-align: center;
+    /*background: #F0F1F2;*/
+    padding: 20px 0;
+    border-radius: 0 0 30px 30px;
+}
+
+.ouibounce-footer p {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.ouibounce-footer p:hover {
+    cursor: pointer;
+}
+
+#ouibounce-modal h2,
+#ouibounce-modal h3 {
+    margin: 0;
+}
+
+#ouibounce-modal h2 {
+    font-size: 20px;
+}
+
+#ouibounce-modal h3 {
+    font-size: 15px;
+    margin-top: 15px;
+}

@@ -1,0 +1,88 @@
+@media (min-width: 1200px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media only screen and (min-width : 300px) and (max-width : 480px){
+
+    body, html {
+        overflow-x: hidden;
+    }
+    header {
+        text-align: center;
+    }
+    header span.pull-left,
+    header span.pull-right {
+        display: block;
+        float: none !important;
+    }
+    .holder .content {
+        width: 93%;
+    }
+    .holder .content .addressInput {
+        font-size: 14px;
+    }
+    span#amount-bitcoin,
+    span#amount-ethereum {
+        float: none !important;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .ui-widget.ui-widget-content {
+        width: 100%;
+    }
+    .transaction {
+        text-align: center;
+        font-size: 12px;
+        word-break: break-all;
+    }
+    .transaction span.pull-left,
+    .transaction span.pull-right {
+        float: none !important;
+        display: block;
+    }
+    .modal-dialog {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .modal-body span.pull-left,
+    .modal-body span.pull-right {
+        display: block;
+        text-align: center;
+        float: none !important;
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (min-width : 481px) and (max-width: 767px) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+    header img.logo {
+        width: 200px;
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+}
+
+
+
